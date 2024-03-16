@@ -1,16 +1,14 @@
-function updateClock() {
+function updateTime() {
     const now = new Date();
-    const hour = now.getHours().toString().padStart(2, '0');
-    const minute = now.getMinutes().toString().padStart(2, '0');
-    const second = now.getSeconds().toString().padStart(2, '0');
-
-    document.getElementById('hour').textContent = hour;
-    document.getElementById('minute').textContent = minute;
-    document.getElementById('second').textContent = second;
-}
-
-// Actualiza el reloj cada segundo
-setInterval(updateClock, 1000);
-
-// Inicia el reloj al cargar la página
-updateClock();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const dateString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('clock').textContent = dateString;
+  }
+  
+  updateTime(); // Call the function once to initially display the time
+  
+  // Update time every second
+  setInterval(updateTime, 1000);
+  

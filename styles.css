@@ -1,21 +1,16 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-}
-
-.clock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 3rem;
-}
-
-.hour,
-.minute,
-.second {
-    margin: 0 5px;
-}
+  }
+  
+  #clock {
+    font-size: 3em;
+    color: #333;
+  }
+  
